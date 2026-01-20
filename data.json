@@ -1,0 +1,239 @@
+{
+  "experiences": [
+    {
+      "id": "celepar",
+      "badge": {
+        "en": "+15 years on public-sector",
+        "pt": "+15 anos no setor público"
+      },
+      "translations": {
+        "en": {
+          "company": "CELEPAR",
+          "role": "System Analyst",
+          "period": "May/2010 – Fev/2026",
+          "bullets": [
+            "PIA - Paraná Artificial Intelligence - Development of the Paraná Artificial Intelligence for State of Paraná.",
+            "Chatbots Platform - Development of the Chatbots Platform for State of Paraná.",
+            "Widgets Platform - Development of the Widgets Platform for State of Paraná.",
+            "Expresso Mobile v3 - Using Polymer and Web Components.",
+            "Expresso Mobile v2 - Using Cordova and PhoneGap.",
+            "Expresso iOS Mobile App - First mobile app released by the State of Paraná. Native iOS development (Objective-C) for Expresso Mobile",
+            "Expresso API REST - Development of the Expresso API REST for State of Paraná.",
+            "Core contributor to the open-source software Expresso Livre."
+          ]
+        },
+        "pt": {
+          "company": "CELEPAR",
+          "role": "Analista de Sistemas",
+          "period": "mai/2010 – fev/2026",
+          "bullets": [
+            "PIA - Inteligência Artificial do Paraná - Desenvolvimento da Inteligência Artificial do Paraná para o Estado do Paraná.",
+            "Plataforma de Chatbots - Desenvolvimento da Plataforma de Chatbots para o Estado do Paraná.",
+            "Plataforma de Widgets - Desenvolvimento da Plataforma de Widgets para o Estado do Paraná.",
+            "Expresso Mobile v3 - Utilizando Polymer e Web Components.",
+            "Expresso Mobile v2 - Utilizando Cordova e PhoneGap.",
+            "Aplicativo Mobile Expresso iOS - Primeiro aplicativo mobile lançado pelo Estado do Paraná. Desenvolvimento iOS nativo (Objective-C) para Expresso Mobile.",
+            "Expresso API REST - Desenvolvimento da Expresso API REST para o Estado do Paraná.",
+            "Contribuidor do software open-source Expresso Livre."
+          ]
+        }
+      }
+    },
+    {
+      "id": "sascar",
+      "translations": {
+        "en": {
+          "company": "SASCAR",
+          "role": "System Analyst",
+          "period": "Jan/2009 – May/2010",
+          "bullets": [
+            "Development of the company intranet system.",
+            "System analysis and PHP development, PostgreSQL-based backend solutions."
+          ]
+        },
+        "pt": {
+          "company": "SASCAR",
+          "role": "Analista de Sistemas",
+          "period": "jan/2009 – mai/2010",
+          "bullets": [
+            "Desenvolvimento do sistema de intranet da empresa.",
+            "Análise de sistemas e desenvolvimento PHP, soluções de backend baseadas em PostgreSQL."
+          ]
+        }
+      }
+    },
+    {
+      "id": "pow",
+      "translations": {
+        "en": {
+          "company": "POW – Provedor Orion Web",
+          "role": "Partner / Developer",
+          "period": "Jan/2006 – Dec/2008",
+          "bullets": [
+            "System analysis and PHP development.",
+            "Website development, web design and user support."
+          ]
+        },
+        "pt": {
+          "company": "POW – Provedor Orion Web",
+          "role": "Sócio / Desenvolvedor",
+          "period": "jan/2006 – dez/2008",
+          "bullets": [
+            "Análise de sistemas e desenvolvimento PHP.",
+            "Desenvolvimento de sites, web design e suporte ao usuário."
+          ]
+        }
+      }
+    },
+    {
+      "id": "m4",
+      "translations": {
+        "en": {
+          "company": "M4 – Tecnologia em Software Ltda.",
+          "role": "Programmer",
+          "period": "Jun/2004 – Jan/2006",
+          "bullets": [
+            "Development of blood bank systems using Delphi and SQL Server."
+          ]
+        },
+        "pt": {
+          "company": "M4 – Tecnologia em Software Ltda.",
+          "role": "Programador",
+          "period": "jun/2004 – jan/2006",
+          "bullets": [
+            "Desenvolvimento de sistemas para bancos de sangue em Delphi e SQL Server."
+          ]
+        }
+      }
+    }
+  ],
+  "projects": [
+    {
+        "id": "pia",
+        "images": [
+          "images/pia_1.png"
+        ],
+        "techs": ["Vue.js", "Node.js", "Node-red", "Java", "Mysql"],
+        "links": [
+          { "label": "pia.paas.pr.gov.br", "url": "https://pia.paas.pr.gov.br" }
+        ],
+        "translations": {
+          "en": {
+            "title": "PIA - Paraná Artificial Intelligence",
+            "description": "A Chatbot to provide information about public services provided by the state of Paraná, using NLP to get the intent of the user and provide the information requested. "
+          },
+          "pt": {
+            "title": "PIA - Inteligência Artificial do Paraná",
+            "description": "Chatbot para fornecer informações sobre serviços públicos prestados pelo estado do Paraná, usando NLP para entender a intenção do usuário e fornecer as informações solicitadas."
+          }
+        }
+      },
+    {
+        "id": "chatbots-platform",
+        "images": [
+          "images/chatbots_1.png",
+          "images/chatbots_2.png"
+        ],
+        "techs": ["Vue.js", "Node.js", "Node-red", "Java", "Mysql"],
+        "links": [
+          { "label": "https://www.detran.pr.gov.br/", "url": "https://www.detran.pr.gov.br/" }
+        ],
+        "translations": {
+          "en": {
+            "title": "Chatbots Platform",
+            "description": "A platform for developing chatbots for WhatsApp and other messaging platforms. Created to automate the process of talking to the citizens of the State of Paraná, replying common questions and providing information about the State of Paraná. Present in all the main web portals of the state of Paraná, with more than 1 Million access per month."
+          },
+          "pt": {
+            "title": "Plataforma de Chatbots",
+            "description": "Plataforma para desenvolvimento de chatbots para WhatsApp e outras plataformas de mensagens. Criada para automatizar o processo de comunicação com os cidadãos do Estado do Paraná, respondendo perguntas comuns e fornecendo informações sobre o Estado do Paraná. Presente em todos os principais portais web do estado do Paraná, com mais de 1 milhão de acessos por mês."
+          }
+        }
+      },
+    {
+      "id": "expresso-mobile",
+      "images": [
+        "images/expresso_ios_1.png",
+        "images/expresso_ios_2.png"
+      ],
+      "techs": ["Objective-C", "iOS", "PHP", "PostgreSQL"],
+      "links": [
+        { "label": "Nova versão do Expresso Mobile mais moderno e intuitivo", "url": "https://www.celepar.pr.gov.br/Noticia/Nova-versao-do-Expresso-Mobile-mais-moderno-e-intuitivo" }, 
+        { "label": "Celepar lança Expresso para dispositivos móveis", "url": "https://www.celepar.pr.gov.br/Noticia/Celepar-lanca-Expresso-para-dispositivos-moveis" }
+      ],
+      "translations": {
+        "en": {
+          "title": "Expresso Mobile – Government email on iOS",
+          "description": "First mobile app released by the State of Paraná, bringing the Expresso Livre groupware to iOS with native Objective‑C, push notifications and secure access for thousands of public servants."
+        },
+        "pt": {
+          "title": "Expresso Mobile – E-mail corporativo no iOS",
+          "description": "Primeiro aplicativo mobile lançado pelo Estado do Paraná, levando o Expresso Livre para iOS com Objective‑C nativo, push notifications e acesso seguro para milhares de servidores públicos."
+        }
+      }
+    },
+    {
+      "id": "widgets",
+      "images": [
+        "images/expresso_widgets_1.png",
+        "images/expresso_widgets_2.png"
+      ],
+      "techs": ["PHP", "JavaScript", "PostgreSQL"],
+      "links": [
+        { "label": "Evolução e produção de Widgets é tema de palestra na Celepar", "url": "https://www.celepar.pr.gov.br/Noticia/Evolucao-e-producao-de-Widgets-e-tema-de-palestra-na-Celepar" }
+      ],
+      "translations": {
+        "en": {
+          "title": "Widgets Platform",
+          "description": "Modular dashboard platform for the State of Paraná Government, creating multiple dashboards for different departments/users, allowing teams to assemble custom workspaces with reusable widgets and integrations with multples APIs and products."
+        },
+        "pt": {
+          "title": "Plataforma de Widgets",
+          "description": "Plataforma modular de dashboard para o Governo do Estado do Paraná, criando múltiplos dashboards para diferentes departamentos/usuários, permitindo que equipes montem áreas de trabalho personalizadas com widgets reutilizáveis e integrações com múltiplas APIs e produtos."
+        }
+      }
+    },
+    {
+        "id": "rocket-plane",
+        "images": [
+          "images/rocket_plane_1.png",
+          "images/rocket_plane_2.png"
+        ],
+        "links": [
+          { "label": "Facebook Page", "url": "https://www.facebook.com/RocketPlaneGame" },
+          { "label": "MacMagazine", "url": "https://macmagazine.com.br/post/2013/04/23/rocket-plane-e-mais-um-joguinho-brasileiro-que-chega-a-app-store/" }
+        ],
+        "techs": ["Objective-C", "Cocos-2D-x", "C++"],
+        "translations": {
+          "en": {
+            "title": "Rocket Plane - iOS/Android Game",
+            "description": "Casual action game for iOS/Android where a plane has to avoid obstacles and collect power-ups to progress."
+          },
+          "pt": {
+            "title": "Rocket Plane - jogo para iOS/Android",
+            "description": "Jogo casual de ação para iOS/Android em que um avião precisa evitar obstáculos e coletar power-ups para progredir."
+          }
+        }
+      },
+    {
+      "id": "chicken-heroes",
+      "images": [
+        "images/chicken_heroes_1.png",
+        "images/chicken_heroes_2.png"
+      ],
+      "links": [
+        { "label": "Facebook Page", "url": "https://www.facebook.com/ChickenHeroes" }
+      ],
+      "techs": ["Objective-C", "Cocos-2D"],
+      "translations": {
+        "en": {
+          "title": "Chicken Heroes – iOS Game",
+          "description": "Casual action game for iOS where quirky chicken heroes defend their farm using touch-based controls, particle effects and smooth 2D animations built with native frameworks."
+        },
+        "pt": {
+          "title": "Chicken Heroes – jogo para iOS",
+          "description": "Jogo casual para iOS em que galinhas heroínas defendem a fazenda com controles por toque, efeitos de partículas e animações 2D fluidas usando frameworks nativos."
+        }
+      }
+    }
+  ]
+}

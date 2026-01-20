@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jair G Pereira Junior – Sênior Software Engineer / System Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @page { margin: 2cm; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.5;
+      background: #ffffff;
+    }
+    h1, h2, h3 { margin: 0; color: #111827; }
+    h1 { font-size: 28px; letter-spacing: -0.5px; }
+    h2 { font-size: 18px; margin-top: 28px; border-bottom: 2px solid #e5e7eb; padding-bottom: 4px; }
+    h3 { font-size: 15px; margin-top: 16px; }
+    p { margin: 6px 0; font-size: 14px; }
+    ul { margin: 8px 0 0 18px; padding: 0; font-size: 14px; }
+    li { margin-bottom: 6px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+    .subtitle { font-size: 15px; color: #374151; margin-top: 4px; }
+    .contact { text-align: right; font-size: 13px; color: #374151; }
+    .contact div { margin-bottom: 4px; }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .contact-links a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .contact-links a:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    .contact-phone {
+      color: #374151;
+    }
+    /* Profile Card */
+    .profile-card {
+      background: linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .profile-name {
+      font-size: 24px;
+      font-weight: 600;
+      color: #111827;
+      margin: 0;
+    }
+    .profile-title {
+      font-size: 14px;
+      color: #6b7280;
+      margin: 0;
+    }
+    .profile-section {
+      margin-top: 4px;
+    }
+    .profile-sections-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .profile-section-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #374151;
+      margin: 0 0 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .profile-section-content {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .profile-languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .profile-languages span {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .upwork-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: color 0.15s ease;
+    }
+    .upwork-link:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    .experience-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      border: 1px solid #93c5fd;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    @media (max-width: 768px) {
+      .profile-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .profile-photo {
+        margin: 0 auto;
+      }
+    }
+    .lang-switch { margin-top: 8px; }
+    .lang-switch button {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      background: #f9fafb;
+      cursor: pointer;
+      margin-left: 4px;
+      transition: all 0.15s ease;
+    }
+    .lang-switch button:hover {
+      background: #e5e7eb;
+    }
+    .lang-switch button.active {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+      font-weight: 600;
+    }
+    .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; margin-top: 24px; }
+    .badge { display: inline-block; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px 10px; font-size: 12px; margin: 4px 4px 0 0; }
+    .role { font-weight: 600; }
+    .period { font-size: 12px; color: #6b7280; }
+    .company { font-size: 14px; color: #374151; }
+    footer { margin-top: 40px; font-size: 12px; color: #6b7280; text-align: center; }
+    @media print { body { color: #000; } }
+
+    /* Portfolio */
+    .portfolio-carousel {
+      margin-top: 24px;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: radial-gradient(circle at top left, #e0f2fe, #f9fafb);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+      padding: 16px 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .portfolio-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: rgba(15, 23, 42, 0.7);
+      color: #f9fafb;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 10px rgba(15, 23, 42, 0.3);
+    }
+    .portfolio-nav:hover {
+      background: rgba(15, 23, 42, 0.9);
+      transform: translateY(-50%) scale(1.03);
+    }
+    .portfolio-nav--prev { left: 12px; }
+    .portfolio-nav--next { right: 12px; }
+    .portfolio-content {
+      width: 100%;
+      max-width: 760px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.5fr);
+      gap: 20px;
+      align-items: center;
+    }
+    .portfolio-image-wrapper {
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      background: #020617;
+      cursor: pointer;
+    }
+    .portfolio-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+      transition: transform 0.5s ease;
+    }
+    .portfolio-image-wrapper::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.6), transparent 60%);
+      pointer-events: none;
+    }
+    .portfolio-text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .portfolio-title {
+      font-size: 16px;
+      margin: 0;
+      color: #0f172a;
+    }
+    .portfolio-description {
+      font-size: 13px;
+      margin: 0;
+      color: #4b5563;
+    }
+    .portfolio-meta {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .portfolio-meta .badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      margin-top: 4px;
+    }
+    .portfolio-links {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .portfolio-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #2563eb;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 11px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .portfolio-link-btn:hover {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+    .portfolio-indicator {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #6b7280;
+      text-align: center;
+    }
+    .portfolio-dots {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .portfolio-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #d1d5db;
+      transition: width 0.15s ease, background 0.15s ease;
+    }
+    .portfolio-dot--active {
+      width: 18px;
+      background: #0f172a;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 40;
+    }
+    .lightbox--open {
+      display: flex;
+    }
+    .lightbox-inner {
+      position: relative;
+      max-width: 960px;
+      width: 90%;
+      max-height: 90vh;
+      background: #020617;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+    .lightbox-image {
+      display: block;
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      background: #020617;
+    }
+    .lightbox-caption {
+      padding: 8px 16px 10px;
+      font-size: 12px;
+      color: #e5e7eb;
+      background: linear-gradient(to right, #020617, #0f172a);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: rgba(15, 23, 42, 0.85);
+      color: #e5e7eb;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: rgba(15, 23, 42, 0.85);
+      color: #e5e7eb;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-nav--prev { left: 12px; }
+    .lightbox-nav--next { right: 12px; }
+
+    /* Print: mostrar lista completa de projetos e esconder carrossel */
+    #portfolio-print-list {
+      display: none;
+      margin-top: 16px;
+    }
+    .portfolio-print-item {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 16px;
+      align-items: start;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f9fafb;
+    }
+    .portfolio-print-item-image {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #e5e7eb;
+    }
+    .portfolio-print-item-content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .portfolio-print-item h3 {
+      font-size: 15px;
+      margin: 0 0 4px;
+      color: #111827;
+    }
+    .portfolio-print-item p {
+      font-size: 12px;
+      margin: 0 0 6px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    .portfolio-print-item .badge {
+      font-size: 10px;
+      padding: 2px 6px;
+    }
+    .portfolio-print-links {
+      font-size: 11px;
+      color: #1d4ed8;
+      margin-top: 4px;
+      word-break: break-all;
+    }
+    .pdf-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      margin-top: 8px;
+    }
+    .pdf-download-btn:hover {
+      background: #1d4ed8;
+    }
+    .pdf-download-btn:active {
+      background: #1e40af;
+    }
+    @media print {
+      .portfolio-carousel,
+      .portfolio-dots,
+      .portfolio-indicator,
+      .pdf-download-btn,
+      .lang-switch {
+        display: none !important;
+      }
+      #portfolio-print-list {
+        display: block;
+      }
+      .portfolio-print-item {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 12px;
+        margin-bottom: 16px;
+        page-break-inside: avoid;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        padding: 10px;
+        background: #ffffff;
+      }
+      .portfolio-print-item-image {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #d1d5db;
+      }
+      .portfolio-print-item h3 {
+        font-size: 14px;
+        margin: 0 0 4px;
+      }
+      .portfolio-print-item p {
+        font-size: 11px;
+        margin: 0 0 4px;
+      }
+      .profile-card {
+        page-break-after: avoid;
+        margin-bottom: 20px;
+        background: linear-gradient(to bottom right, #f9fafb, #f3f4f6) !important;
+        border: 1px solid #e5e7eb !important;
+        border-radius: 12px !important;
+        padding: 20px !important;
+        display: grid !important;
+        grid-template-columns: 120px 1fr !important;
+        gap: 20px !important;
+      }
+      .profile-photo {
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 50% !important;
+        border: 3px solid #ffffff !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+      }
+      .profile-info {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+      }
+      .profile-name {
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        color: #111827 !important;
+      }
+      .profile-title {
+        font-size: 14px !important;
+        color: #6b7280 !important;
+      }
+      .profile-sections-row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+      }
+      .profile-section-title {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        color: #374151 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+      }
+      .profile-section-content {
+        font-size: 13px !important;
+        color: #4b5563 !important;
+        line-height: 1.5 !important;
+      }
+      .profile-languages span {
+        background: #e0f2fe !important;
+        color: #0369a1 !important;
+        padding: 2px 8px !important;
+        border-radius: 4px !important;
+        font-size: 12px !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; }
+      .portfolio-carousel {
+        padding: 16px 40px;
+      }
+      .portfolio-content {
+        grid-template-columns: 1fr;
+      }
+      .portfolio-image {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="profile-card">
+    <img src="images/profile.jpeg" alt="Profile Photo" class="profile-photo" id="profile-photo" />
+    <div class="profile-info">
+      <div>
+        <h1 class="profile-name">Jair G Pereira Junior</h1>
+        <p class="profile-title" data-i18n="subtitle">Sênior Software Engineer · System Analyst · Full Stack Developer</p>
+      </div>
+      <div class="profile-sections-row">
+        <div class="profile-section">
+          <h3 class="profile-section-title" data-i18n="contactTitle">Contact</h3>
+          <div class="profile-section-content">
+            <div><a href="mailto:pereira.jair@gmail.com" style="color: #2563eb; text-decoration: none;">pereira.jair@gmail.com</a></div>
+            <div>(41) 98887-0414</div>
+            <div style="margin-top: 6px;">
+              <a href="https://www.linkedin.com/in/jair-pereira-64914234/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; margin-right: 12px;">LinkedIn</a>
+              <a href="https://github.com/pereirajair" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; margin-right: 12px;">GitHub</a>
+              <a href="https://www.upwork.com/freelancers/yourprofile" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">Upwork</a>
+            </div>
+          </div>
+        </div>
+        <div class="profile-section">
+          <h3 class="profile-section-title" data-i18n="languagesTitle">Languages</h3>
+          <div class="profile-languages">
+            <span>Portuguese</span>
+            <span>English</span>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section">
+        <h3 class="profile-section-title" data-i18n="summaryTitle"></h3>
+        <div class="profile-section-content" data-i18n="summaryText"></div>
+      </div>
+      <div style="margin-top: 8px; display: flex; gap: 8px; align-items: center;">
+        <div class="lang-switch">
+          <button id="lang-pt" onclick="setLang('pt')">PT</button>
+          <button id="lang-en" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="pdf-download-btn" onclick="downloadPDF()" title="Download as PDF">
+          📄 PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" style="display: none;">
+    <div>
+      <h1>Jair G Pereira Junior</h1>
+      <div class="subtitle" data-i18n="subtitle">Sênior Software Engineer · System Analyst · Full Stack Developer</div>
+    </div>
+    <div class="contact">
+      <div data-i18n="location">Brazil</div>
+      <div data-i18n="languages">Portuguese · English</div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:pereira.jair@gmail.com">pereira.jair@gmail.com</a>
+        <div class="contact-phone">(41) 98887-0414</div>
+      </div>
+      <div class="lang-switch">
+        <button onclick="setLang('pt')">PT</button>
+        <button onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="grid">
+    <div>
+      <section>
+        <h2 data-i18n="experienceTitle">Professional Experience</h2>
+        <div id="experience-list"></div>
+      </section>
+    </div>
+
+    <div>
+      <section>
+        <h2 data-i18n="skillsTitle">Core Skills</h2>
+        <div>
+          <span class="badge">JavaScript</span><span class="badge">TypeScript</span><span class="badge">HTML</span><span class="badge">CSS</span>
+          <span class="badge">Node.js</span><span class="badge">Vue.js</span><span class="badge">React</span><span class="badge">Quasar</span>
+          <span class="badge">n8n</span><span class="badge">Node-RED</span><span class="badge">WhatsApp Official API</span>
+          <span class="badge">Web Components</span><span class="badge">LIT / Polymer</span>
+          <span class="badge">PHP</span><span class="badge">Python</span><span class="badge">Delphi</span><span class="badge">Objective-C</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-i18n="dbTitle">Databases</h2>
+        <div>
+          <span class="badge">PostgreSQL</span><span class="badge">MySQL / MariaDB</span>
+          <span class="badge">MongoDB</span><span class="badge">Redis</span><span class="badge">SQL Server</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-i18n="cloudTitle">Cloud & DevOps</h2>
+        <div>
+          <span class="badge">AWS</span><span class="badge">EC2</span><span class="badge">ECR</span>
+          <span class="badge">Docker</span><span class="badge">OpenShift</span><span class="badge">Linux</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-i18n="aiTitle">AI & Automation</h2>
+        <ul>
+          <li data-i18n="ai1">NLP and AI-powered chatbots</li>
+          <li data-i18n="ai2">WhatsApp automation and integrations</li>
+          <li data-i18n="ai3">AI constrained to proprietary knowledge bases</li>
+          <li data-i18n="ai4">N8N workflow automation</li>
+          <li data-i18n="ai5">Node-RED automation and integrations</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section>
+    <h2 data-i18n="portfolioTitle">Portfolio</h2>
+    <div class="portfolio-carousel">
+      <button class="portfolio-nav portfolio-nav--prev" type="button" onclick="prevProject()">‹</button>
+      <div class="portfolio-content" id="portfolio">
+        <div class="portfolio-image-wrapper" onclick="openLightbox(event)">
+          <img class="portfolio-image" id="portfolio-image" src="" alt="" />
+        </div>
+        <div class="portfolio-text">
+          <h3 class="portfolio-title" id="portfolio-title"></h3>
+          <p class="portfolio-description" id="portfolio-description"></p>
+          <div class="portfolio-meta" id="portfolio-meta"></div>
+          <div class="portfolio-links" id="portfolio-links"></div>
+        </div>
+      </div>
+      <button class="portfolio-nav portfolio-nav--next" type="button" onclick="nextProject()">›</button>
+    </div>
+    <div class="portfolio-dots" id="portfolio-dots"></div>
+    <div class="portfolio-indicator" id="portfolio-indicator"></div>
+    <div id="portfolio-print-list"></div>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lightbox-close" type="button" onclick="closeLightbox(event)">×</button>
+      <button class="lightbox-nav lightbox-nav--prev" type="button" onclick="prevLightboxImage(event)">‹</button>
+      <img id="lightbox-image" class="lightbox-image" src="" alt="" />
+      <button class="lightbox-nav lightbox-nav--next" type="button" onclick="nextLightboxImage(event)">›</button>
+      <div class="lightbox-caption">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-counter"></span>
+      </div>
+      <div id="lightbox-description" class="lightbox-description"></div>
+    </div>
+  </div>
+
+  <section>
+    <h2 data-i18n="contactInviteTitle"></h2>
+    <p data-i18n="contactInviteText"></p>
+    <div style="margin-top: 12px;">
+      <a href="https://www.upwork.com/freelancers/yourprofile" target="_blank" rel="noopener noreferrer" class="upwork-link" data-i18n="upworkLink"></a>
+    </div>
+  </section>
+
+  <footer>
+    <span data-i18n="footer">pereira.jair@gmail.com - (41) 98887-0414</span>
+  </footer>
+</div>
+
+<script>
+let experiences = [];
+let projects = [];
+let currentLang = 'en';
+let currentProjectIndex = 0;
+let currentImageIndex = 0;
+
+function renderExperiences() {
+  const container = document.getElementById('experience-list');
+  if (!container) return;
+
+  const items = experiences.map(exp => {
+    const t = exp.translations[currentLang] || exp.translations.en;
+    const bulletsHtml = t.bullets.map(b => `<li>${b}</li>`).join('');
+    let badgeHtml = '';
+    if (exp.badge) {
+      const badgeText = typeof exp.badge === 'object' ? (exp.badge[currentLang] || exp.badge.en) : exp.badge;
+      badgeHtml = `<span class="experience-badge">${badgeText}</span>`;
+    }
+    return `
+      <article class="experience-item">
+        <h3 class="role">${t.company}${badgeHtml}</h3>
+        <div class="company">${t.role}</div>
+        <div class="period">${t.period}</div>
+        <ul>${bulletsHtml}</ul>
+      </article>
+    `;
+  }).join('');
+
+  container.innerHTML = items;
+}
+
+function renderPortfolio() {
+  const container = document.getElementById('portfolio');
+  const img = document.getElementById('portfolio-image');
+  const titleEl = document.getElementById('portfolio-title');
+  const descEl = document.getElementById('portfolio-description');
+  const indicatorEl = document.getElementById('portfolio-indicator');
+  const metaEl = document.getElementById('portfolio-meta');
+  const dotsEl = document.getElementById('portfolio-dots');
+  const linksEl = document.getElementById('portfolio-links');
+
+  if (!container || !projects.length) return;
+
+  const project = projects[currentProjectIndex];
+  const copy = project.translations[currentLang] || project.translations.en;
+  const images = project.images || [];
+  currentImageIndex = 0;
+
+  img.src = images[0] || '';
+  img.alt = copy.title;
+  titleEl.textContent = copy.title;
+  descEl.textContent = copy.description;
+  if (metaEl) {
+    const techBadges = (project.techs || []).map(t => `<span class="badge">${t}</span>`).join(' ');
+    metaEl.innerHTML = techBadges;
+  }
+  if (linksEl) {
+    const links = project.links || [];
+    if (Array.isArray(links) && links.length) {
+      const btns = links.map(link => {
+        if (typeof link === 'string') {
+          const url = link.startsWith('http') ? link : `https://${link}`;
+          return `<a class="portfolio-link-btn" href="${url}" target="_blank" rel="noopener noreferrer">${link}</a>`;
+        }
+        const label = link.label || link.url || 'Link';
+        const url = (link.url || '').startsWith('http') ? link.url : `https://${link.url}`;
+        return `<a class="portfolio-link-btn" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+      }).join('');
+      linksEl.innerHTML = btns;
+    } else {
+      linksEl.innerHTML = '';
+    }
+  }
+  if (indicatorEl) {
+    indicatorEl.textContent = (currentProjectIndex + 1) + ' / ' + projects.length;
+  }
+
+  if (dotsEl) {
+    dotsEl.innerHTML = projects.map((_, index) => `
+      <div class="portfolio-dot ${index === currentProjectIndex ? 'portfolio-dot--active' : ''}"></div>
+    `).join('');
+  }
+}
+
+function renderPortfolioPrint() {
+  const listEl = document.getElementById('portfolio-print-list');
+  if (!listEl) return;
+
+  const items = projects.map(project => {
+    const copy = project.translations[currentLang] || project.translations.en;
+    const images = project.images || [];
+    const mainImage = images[0] || '';
+    const techBadges = (project.techs || []).map(t => `<span class="badge">${t}</span>`).join(' ');
+    const links = project.links || [];
+    const urlsText = Array.isArray(links) && links.length
+      ? links.map(link => (typeof link === 'string' ? link : (link.url || link.label || ''))).filter(Boolean).join(' | ')
+      : '';
+    const imageHtml = mainImage
+      ? `<img src="${mainImage}" alt="${copy.title}" class="portfolio-print-item-image" />`
+      : '<div class="portfolio-print-item-image" style="background: #e5e7eb; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 10px;">No Image</div>';
+
+    return `
+      <article class="portfolio-print-item">
+        ${imageHtml}
+        <div class="portfolio-print-item-content">
+          <h3>${copy.title}</h3>
+          <p>${copy.description}</p>
+          <div>${techBadges}</div>
+          ${urlsText ? `<div class="portfolio-print-links">${urlsText}</div>` : ''}
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  listEl.innerHTML = items;
+}
+
+function downloadPDF() {
+  window.print();
+}
+
+function openLightbox(event) {
+  if (event) event.stopPropagation();
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox || !projects.length) return;
+
+  const project = projects[currentProjectIndex];
+  const images = project.images || [];
+  const copy = project.translations[currentLang] || project.translations.en;
+
+  if (!images.length) return;
+
+  const imgEl = document.getElementById('lightbox-image');
+  const titleEl = document.getElementById('lightbox-title');
+  const counterEl = document.getElementById('lightbox-counter');
+
+  imgEl.src = images[currentImageIndex];
+  imgEl.alt = copy.title;
+  titleEl.textContent = copy.title;
+  counterEl.textContent = (currentImageIndex + 1) + ' / ' + images.length;
+
+  lightbox.classList.add('lightbox--open');
+}
+
+function closeLightbox(event) {
+  if (event) event.stopPropagation();
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+  lightbox.classList.remove('lightbox--open');
+}
+
+function nextLightboxImage(event) {
+  if (event) event.stopPropagation();
+  if (!projects.length) return;
+  const project = projects[currentProjectIndex];
+  const images = project.images || [];
+  if (!images.length) return;
+
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  openLightbox();
+}
+
+function prevLightboxImage(event) {
+  if (event) event.stopPropagation();
+  if (!projects.length) return;
+  const project = projects[currentProjectIndex];
+  const images = project.images || [];
+  if (!images.length) return;
+
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  openLightbox();
+}
+
+function nextProject() {
+  if (!projects.length) return;
+  currentProjectIndex = (currentProjectIndex + 1) % projects.length;
+  renderPortfolio();
+}
+
+function prevProject() {
+  if (!projects.length) return;
+  currentProjectIndex = (currentProjectIndex - 1 + projects.length) % projects.length;
+  renderPortfolio();
+}
+
+const translations = {
+  en: {
+    subtitle: 'Senior Software Engineer · System Analyst · Full Stack Developer',
+    contactTitle: 'Contact',
+    languagesTitle: 'Languages',
+    summaryTitle: 'Professional Summary',
+    summaryText: 'Senior Software Engineer and System Analyst with over 15 years of experience in the public sector, specializing in AI-powered solutions, chatbot platforms, and enterprise software development. Led the development of Paraná Artificial Intelligence (PIA), Chatbots Platform serving over 1 million monthly users, and multiple mobile applications including the first iOS app released by the State of Paraná. Expert in full-stack development (Vue.js, Node.js, PHP, PostgreSQL), native iOS development (Objective-C), Web Components, and RESTful APIs. Core contributor to open-source software Expresso Livre, with proven track record in building scalable, modular platforms for government institutions.',
+    experienceTitle: 'Professional Experience',
+    skillsTitle: 'Core Skills',
+    dbTitle: 'Databases',
+    cloudTitle: 'Cloud & DevOps',
+    aiTitle: 'AI & Automation',
+    ai1: 'NLP and AI-powered chatbots',
+    ai2: 'WhatsApp automation and integrations',
+    ai3: 'AI constrained to proprietary knowledge bases',
+    ai4: 'N8N workflow automation',
+    ai5: 'Node-RED automation and integrations',
+    portfolioTitle: 'Portfolio',
+    contactInviteTitle: "Let's Work Together",
+    contactInviteText: "I'm open to new opportunities and collaborations. Whether you need a full-stack developer, system analyst, or someone to help with AI-powered solutions, mobile apps, or enterprise platforms, I'd love to hear from you. Feel free to reach out through any of the contact methods above, or check out my profile on Upwork.",
+    upworkLink: 'View my Upwork Profile →',
+    footer: 'pereira.jair@gmail.com - (41) 98887-0414'
+  },
+  pt: {
+    subtitle: 'Engenheiro de Software · Analista de Sistemas · Desenvolvedor Full Stack',
+    contactTitle: 'Contato',
+    languagesTitle: 'Idiomas',
+    location: 'Brasil',
+    languages: 'Português · Inglês',
+    summaryTitle: 'Resumo Profissional',
+    summaryText: 'Engenheiro de Software Sênior e Analista de Sistemas com mais de 15 anos de experiência no setor público, especializado em soluções de IA, plataformas de chatbots e desenvolvimento de software empresarial. Liderou o desenvolvimento da Inteligência Artificial do Paraná (PIA), Plataforma de Chatbots com mais de 1 milhão de acessos mensais, e múltiplos aplicativos mobile incluindo o primeiro app iOS lançado pelo Estado do Paraná. Especialista em desenvolvimento full-stack (Vue.js, Node.js, PHP, PostgreSQL), desenvolvimento iOS nativo (Objective-C), Web Components e APIs RESTful. Contribuidor principal do software open-source Expresso Livre, com histórico comprovado em construção de plataformas escaláveis e modulares para instituições governamentais.',
+    experienceTitle: 'Experiência Profissional',
+    skillsTitle: 'Competências Técnicas',
+    dbTitle: 'Bancos de Dados',
+    cloudTitle: 'Cloud & DevOps',
+    aiTitle: 'IA & Automação',
+    ai1: 'Chatbots e soluções com NLP',
+    ai2: 'Automação e integrações com WhatsApp',
+    ai3: 'IA restrita a bases de conhecimento proprietárias',
+    ai4: 'Automação de workflows com N8N',
+    ai5: 'Automação e integrações com Node-RED',
+    portfolioTitle: 'Portfolio',
+    contactInviteTitle: 'Vamos Trabalhar Juntos',
+    contactInviteText: 'Estou aberto a novas oportunidades e colaborações. Se você precisa de um desenvolvedor full-stack, analista de sistemas, ou alguém para ajudar com soluções de IA, aplicativos mobile ou plataformas empresariais, adoraria ouvir de você. Sinta-se à vontade para entrar em contato através de qualquer um dos métodos acima, ou confira meu perfil no Upwork.',
+    upworkLink: 'Ver meu Perfil no Upwork →',
+    footer: 'pereira.jair@gmail.com - (41) 98887-0414'
+  }
+};
+
+function setLang(lang) {
+  currentLang = lang;
+  const dict = translations[lang] || {};
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) el.innerHTML = dict[key];
+  });
+  
+  // Atualizar destaque dos botões de idioma
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  const activeBtn = document.getElementById(`lang-${lang}`);
+  if (activeBtn) activeBtn.classList.add('active');
+  
+  renderExperiences();
+  renderPortfolio();
+  renderPortfolioPrint();
+}
+
+// Carregar dados do JSON
+async function loadData() {
+  try {
+    const response = await fetch('data.json');
+    if (!response.ok) throw new Error('Failed to load data.json');
+    const data = await response.json();
+    experiences = data.experiences || [];
+    projects = data.projects || [];
+    
+    // Render inicial em inglês
+    renderExperiences();
+    renderPortfolio();
+    renderPortfolioPrint();
+  } catch (error) {
+    console.error('Error loading data:', error);
+    // Fallback: mostrar mensagem de erro ou dados vazios
+    document.getElementById('experience-list').innerHTML = '<p>Error loading experiences. Please check data.json file.</p>';
+    document.getElementById('portfolio').innerHTML = '<p>Error loading portfolio. Please check data.json file.</p>';
+  }
+}
+
+// Inicializar ao carregar a página
+loadData().then(() => {
+  // Definir idioma inicial e destacar botão
+  setLang('en');
+});
+</script>
+</body>
+</html>
