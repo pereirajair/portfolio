@@ -10,7 +10,7 @@
         "en": {
           "company": "CELEPAR",
           "role": "System Analyst",
-          "period": "May/2010 – Fev/2026",
+          "period": "May/2010 – Today",
           "bullets": [
             "PIA - Paraná Artificial Intelligence - Development of the Paraná Artificial Intelligence for State of Paraná.",
             "Chatbots Platform - Development of the Chatbots Platform for State of Paraná.",
@@ -25,9 +25,9 @@
         "pt": {
           "company": "CELEPAR",
           "role": "Analista de Sistemas",
-          "period": "mai/2010 – fev/2026",
+          "period": "mai/2010 – Hoje",
           "bullets": [
-            "PIA - Inteligência Artificial do Paraná - Desenvolvimento da Inteligência Artificial do Paraná para o Estado do Paraná.",
+            "PIA - Paraná Inteligência Artificial - Desenvolvimento do Chatbot de Inteligência Artificial do Paraná com NLP para entender a intenção do usuário e oferecer o serviço que o usuário está buscando.",
             "Plataforma de Chatbots - Desenvolvimento da Plataforma de Chatbots para o Estado do Paraná.",
             "Plataforma de Widgets - Desenvolvimento da Plataforma de Widgets para o Estado do Paraná.",
             "Expresso Mobile v3 - Utilizando Polymer e Web Components.",
@@ -108,6 +108,29 @@
     }
   ],
   "projects": [
+    {
+        "id": "gestor-completo-pf",
+        "images": [
+          "images/gestor_1.png",
+          "images/gestor_2.png",
+          "images/gestor_3.png",
+          "images/gestor_4.png"
+        ],
+        "techs": ["Vue.js", "Node.js", "N8N", "Quasar", "Supabase (PostgreSQL)"],
+        "links": [
+          { "label": "gestorcompleto.com.br", "url": "https://gestorcompleto.com.br" }
+        ],
+        "translations": {
+          "en": {
+            "title": "Gestor Completo - Personal Finance Management",
+            "description": "This personal finance management platform, integrated with the official WhatsApp Business API and artificial intelligence using the MCP protocol, allows users to manage their finances simply and efficiently by sending audio and text messages to a chatbot on WhatsApp. It also enables complete family financial control with graphs, reports, and much more. "
+          },
+          "pt": {
+            "title": "Gestor Completo - Gestão de Finanças Pessoais",
+            "description": "Plataforma de gestão de finanças pessoais, integrada com Whatsapp Business API Oficial e Inteligência artificial com o protocolo MCP, permite que o usuário gerencie as suas finanças de forma simples e eficiente, através do envio de mensagens de áudio e texto para um chatbot em whatsapp, também permite um controle financeiro familiar completo com gráficos, relatórios e muito mais."
+          }
+        }
+    },
     {
         "id": "pia",
         "images": [
