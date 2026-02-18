@@ -109,29 +109,6 @@
   ],
   "projects": [
     {
-        "id": "gestor-completo-pf",
-        "images": [
-          "images/gestor_1.png",
-          "images/gestor_2.png",
-          "images/gestor_3.png",
-          "images/gestor_4.png"
-        ],
-        "techs": ["Vue.js", "Node.js", "N8N", "Quasar", "Supabase (PostgreSQL)"],
-        "links": [
-          { "label": "gestorcompleto.com.br", "url": "https://gestorcompleto.com.br" }
-        ],
-        "translations": {
-          "en": {
-            "title": "Gestor Completo - Personal Finance Management",
-            "description": "This personal finance management platform, integrated with the official WhatsApp Business API and artificial intelligence using the MCP protocol, allows users to manage their finances simply and efficiently by sending audio and text messages to a chatbot on WhatsApp. It also enables complete family financial control with graphs, reports, and much more. "
-          },
-          "pt": {
-            "title": "Gestor Completo - Gestão de Finanças Pessoais",
-            "description": "Plataforma de gestão de finanças pessoais, integrada com Whatsapp Business API Oficial e Inteligência artificial com o protocolo MCP, permite que o usuário gerencie as suas finanças de forma simples e eficiente, através do envio de mensagens de áudio e texto para um chatbot em whatsapp, também permite um controle financeiro familiar completo com gráficos, relatórios e muito mais."
-          }
-        }
-    },
-    {
         "id": "pia",
         "images": [
           "images/pia_1.png"
