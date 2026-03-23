@@ -627,10 +627,43 @@
         height: 180px;
       }
     }
+
+    /* Upwork mode: hide all contact info */
+    body.upwork-mode #contact-section,
+    body.upwork-mode #contact-invite-section,
+    body.upwork-mode footer {
+      display: none !important;
+    }
+    .upwork-mode-banner {
+      background: #ecfdf5;
+      border: 1px solid #6ee7b7;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: #065f46;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .upwork-mode-banner strong {
+      font-weight: 600;
+    }
+    body:not(.upwork-mode) .upwork-mode-banner {
+      display: none !important;
+    }
+    @media print {
+      .upwork-mode-banner { display: none !important; }
+    }
   </style>
 </head>
 <body>
 <div class="container">
+  <div class="upwork-mode-banner" id="upwork-banner">
+    <span>Upwork CV mode — <strong>contact info hidden.</strong> Use the PDF button to save or print.</span>
+    <button class="pdf-download-btn" onclick="downloadPDF()" style="margin-top: 0;">Print / Save PDF</button>
+  </div>
   <div class="profile-card">
     <img src="images/profile.jpeg" alt="Profile Photo" class="profile-photo" id="profile-photo" />
     <div class="profile-info">
@@ -639,7 +672,7 @@
         <p class="profile-title" data-i18n="subtitle">Sênior Software Engineer · System Analyst · Full Stack Developer</p>
       </div>
       <div class="profile-sections-row">
-        <div class="profile-section">
+        <div class="profile-section" id="contact-section">
           <h3 class="profile-section-title" data-i18n="contactTitle">Contact</h3>
           <div class="profile-section-content">
             <div><a href="mailto:pereira.jair@gmail.com" style="color: #2563eb; text-decoration: none;">pereira.jair@gmail.com</a></div>
@@ -785,7 +818,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="contact-invite-section">
     <h2 data-i18n="contactInviteTitle"></h2>
     <p data-i18n="contactInviteText"></p>
     <div style="margin-top: 12px;">
@@ -1093,11 +1126,20 @@ async function loadData() {
 }
 
 
+// Detecta modo Upwork via parâmetro GET ?upwork=1
+function detectUpworkMode() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('upwork') === '1') {
+    document.body.classList.add('upwork-mode');
+  }
+}
+
 // Inicializar ao carregar a página
 loadData().then(() => {
   // Detectar idioma do navegador (PT ou EN) e inicializar nesse idioma
   const initialLang = detectInitialLang();
   setLang(initialLang);
+  detectUpworkMode();
 });
 </script>
 </body>

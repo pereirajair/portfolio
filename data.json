@@ -109,56 +109,117 @@
   ],
   "projects": [
     {
-        "id": "pia",
-        "images": [
-          "images/pia_1.png"
-        ],
-        "techs": ["Vue.js", "Node.js", "Node-red", "Java", "Mysql"],
-        "links": [
-          { "label": "pia.paas.pr.gov.br", "url": "https://pia.paas.pr.gov.br" }
-        ],
-        "translations": {
-          "en": {
-            "title": "PIA - Paraná Artificial Intelligence",
-            "description": "A Chatbot to provide information about public services provided by the state of Paraná, using NLP to get the intent of the user and provide the information requested. "
-          },
-          "pt": {
-            "title": "PIA - Inteligência Artificial do Paraná",
-            "description": "Chatbot para fornecer informações sobre serviços públicos prestados pelo estado do Paraná, usando NLP para entender a intenção do usuário e fornecer as informações solicitadas."
-          }
+      "id": "gestor-completo-pf",
+      "images": [
+        "images/gestor_1.png",
+        "images/gestor_2.png",
+        "images/gestor_3.png",
+        "images/gestor_4.png"
+      ],
+      "techs": [
+        "Vue.js",
+        "Node.js",
+        "N8N",
+        "Quasar",
+        "Supabase (PostgreSQL)"
+      ],
+      "links": [
+        {
+          "label": "gestorcompleto.com.br",
+          "url": "https://gestorcompleto.com.br"
         }
-      },
+      ],
+      "translations": {
+        "en": {
+          "title": "Gestor Completo - Personal Finance Management",
+          "description": "This personal finance management platform, integrated with the official WhatsApp Business API and artificial intelligence using the MCP protocol, allows users to manage their finances simply and efficiently by sending audio and text messages to a chatbot on WhatsApp. It also enables complete family financial control with graphs, reports, and much more. "
+        },
+        "pt": {
+          "title": "Gestor Completo - Gestão de Finanças Pessoais",
+          "description": "Plataforma de gestão de finanças pessoais, integrada com Whatsapp Business API Oficial e Inteligência artificial com o protocolo MCP, permite que o usuário gerencie as suas finanças de forma simples e eficiente, através do envio de mensagens de áudio e texto para um chatbot em whatsapp, também permite um controle financeiro familiar completo com gráficos, relatórios e muito mais."
+        }
+      }
+    },
     {
-        "id": "chatbots-platform",
-        "images": [
-          "images/chatbots_1.png",
-          "images/chatbots_2.png"
-        ],
-        "techs": ["Vue.js", "Node.js", "Node-red", "Java", "Mysql"],
-        "links": [
-          { "label": "https://www.detran.pr.gov.br/", "url": "https://www.detran.pr.gov.br/" }
-        ],
-        "translations": {
-          "en": {
-            "title": "Chatbots Platform",
-            "description": "A platform for developing chatbots for WhatsApp and other messaging platforms. Created to automate the process of talking to the citizens of the State of Paraná, replying common questions and providing information about the State of Paraná. Present in all the main web portals of the state of Paraná, with more than 1 Million access per month."
-          },
-          "pt": {
-            "title": "Plataforma de Chatbots",
-            "description": "Plataforma para desenvolvimento de chatbots para WhatsApp e outras plataformas de mensagens. Criada para automatizar o processo de comunicação com os cidadãos do Estado do Paraná, respondendo perguntas comuns e fornecendo informações sobre o Estado do Paraná. Presente em todos os principais portais web do estado do Paraná, com mais de 1 milhão de acessos por mês."
-          }
+      "id": "pia",
+      "images": [
+        "images/pia_1.png"
+      ],
+      "techs": [
+        "Vue.js",
+        "Node.js",
+        "Node-red",
+        "Java",
+        "Mysql"
+      ],
+      "links": [
+        {
+          "label": "pia.paas.pr.gov.br",
+          "url": "https://pia.paas.pr.gov.br"
         }
-      },
+      ],
+      "translations": {
+        "en": {
+          "title": "PIA - Paraná Artificial Intelligence",
+          "description": "A Chatbot to provide information about public services provided by the state of Paraná, using NLP to get the intent of the user and provide the information requested. "
+        },
+        "pt": {
+          "title": "PIA - Inteligência Artificial do Paraná",
+          "description": "Chatbot para fornecer informações sobre serviços públicos prestados pelo estado do Paraná, usando NLP para entender a intenção do usuário e fornecer as informações solicitadas."
+        }
+      }
+    },
+    {
+      "id": "chatbots-platform",
+      "images": [
+        "images/chatbots_1.png",
+        "images/chatbots_2.png"
+      ],
+      "techs": [
+        "Vue.js",
+        "Node.js",
+        "Node-red",
+        "Java",
+        "Mysql"
+      ],
+      "links": [
+        {
+          "label": "https://www.detran.pr.gov.br/",
+          "url": "https://www.detran.pr.gov.br/"
+        }
+      ],
+      "translations": {
+        "en": {
+          "title": "Chatbots Platform",
+          "description": "A platform for developing chatbots for WhatsApp and other messaging platforms. Created to automate the process of talking to the citizens of the State of Paraná, replying common questions and providing information about the State of Paraná. Present in all the main web portals of the state of Paraná, with more than 1 Million access per month."
+        },
+        "pt": {
+          "title": "Plataforma de Chatbots",
+          "description": "Plataforma para desenvolvimento de chatbots para WhatsApp e outras plataformas de mensagens. Criada para automatizar o processo de comunicação com os cidadãos do Estado do Paraná, respondendo perguntas comuns e fornecendo informações sobre o Estado do Paraná. Presente em todos os principais portais web do estado do Paraná, com mais de 1 milhão de acessos por mês."
+        }
+      }
+    },
     {
       "id": "expresso-mobile",
       "images": [
         "images/expresso_ios_1.png",
         "images/expresso_ios_2.png"
       ],
-      "techs": ["Objective-C", "iOS", "PHP", "PostgreSQL"],
+      "techs": [
+        "Objective-C",
+        "iOS",
+        "PHP",
+        "PostgreSQL"
+      ],
       "links": [
-        { "label": "Nova versão do Expresso Mobile mais moderno e intuitivo", "url": "https://www.celepar.pr.gov.br/Noticia/Nova-versao-do-Expresso-Mobile-mais-moderno-e-intuitivo" }, 
-        { "label": "Celepar lança Expresso para dispositivos móveis", "url": "https://www.celepar.pr.gov.br/Noticia/Celepar-lanca-Expresso-para-dispositivos-moveis" }
+        {
+          "label": "Nova versão do Expresso Mobile mais moderno e intuitivo",
+          "url": "https://www.celepar.pr.gov.br/Noticia/Nova-versao-do-Expresso-Mobile-mais-moderno-e-intuitivo"
+        },
+        {
+          "label": "Celepar lança Expresso para dispositivos móveis",
+          "url": "https://www.celepar.pr.gov.br/Noticia/Celepar-lanca-Expresso-para-dispositivos-moveis"
+        }
       ],
       "translations": {
         "en": {
@@ -177,9 +238,16 @@
         "images/expresso_widgets_1.png",
         "images/expresso_widgets_2.png"
       ],
-      "techs": ["PHP", "JavaScript", "PostgreSQL"],
+      "techs": [
+        "PHP",
+        "JavaScript",
+        "PostgreSQL"
+      ],
       "links": [
-        { "label": "Evolução e produção de Widgets é tema de palestra na Celepar", "url": "https://www.celepar.pr.gov.br/Noticia/Evolucao-e-producao-de-Widgets-e-tema-de-palestra-na-Celepar" }
+        {
+          "label": "Evolução e produção de Widgets é tema de palestra na Celepar",
+          "url": "https://www.celepar.pr.gov.br/Noticia/Evolucao-e-producao-de-Widgets-e-tema-de-palestra-na-Celepar"
+        }
       ],
       "translations": {
         "en": {
@@ -193,27 +261,37 @@
       }
     },
     {
-        "id": "rocket-plane",
-        "images": [
-          "images/rocket_plane_1.png",
-          "images/rocket_plane_2.png"
-        ],
-        "links": [
-          { "label": "Facebook Page", "url": "https://www.facebook.com/RocketPlaneGame" },
-          { "label": "MacMagazine", "url": "https://macmagazine.com.br/post/2013/04/23/rocket-plane-e-mais-um-joguinho-brasileiro-que-chega-a-app-store/" }
-        ],
-        "techs": ["Objective-C", "Cocos-2D-x", "C++"],
-        "translations": {
-          "en": {
-            "title": "Rocket Plane - iOS/Android Game",
-            "description": "Casual action game for iOS/Android where a plane has to avoid obstacles and collect power-ups to progress."
-          },
-          "pt": {
-            "title": "Rocket Plane - jogo para iOS/Android",
-            "description": "Jogo casual de ação para iOS/Android em que um avião precisa evitar obstáculos e coletar power-ups para progredir."
-          }
+      "id": "rocket-plane",
+      "images": [
+        "images/rocket_plane_1.png",
+        "images/rocket_plane_2.png"
+      ],
+      "links": [
+        {
+          "label": "Facebook Page",
+          "url": "https://www.facebook.com/RocketPlaneGame"
+        },
+        {
+          "label": "MacMagazine",
+          "url": "https://macmagazine.com.br/post/2013/04/23/rocket-plane-e-mais-um-joguinho-brasileiro-que-chega-a-app-store/"
         }
-      },
+      ],
+      "techs": [
+        "Objective-C",
+        "Cocos-2D-x",
+        "C++"
+      ],
+      "translations": {
+        "en": {
+          "title": "Rocket Plane - iOS/Android Game",
+          "description": "Casual action game for iOS/Android where a plane has to avoid obstacles and collect power-ups to progress."
+        },
+        "pt": {
+          "title": "Rocket Plane - jogo para iOS/Android",
+          "description": "Jogo casual de ação para iOS/Android em que um avião precisa evitar obstáculos e coletar power-ups para progredir."
+        }
+      }
+    },
     {
       "id": "chicken-heroes",
       "images": [
@@ -221,9 +299,15 @@
         "images/chicken_heroes_2.png"
       ],
       "links": [
-        { "label": "Facebook Page", "url": "https://www.facebook.com/ChickenHeroes" }
+        {
+          "label": "Facebook Page",
+          "url": "https://www.facebook.com/ChickenHeroes"
+        }
       ],
-      "techs": ["Objective-C", "Cocos-2D"],
+      "techs": [
+        "Objective-C",
+        "Cocos-2D"
+      ],
       "translations": {
         "en": {
           "title": "Chicken Heroes – iOS Game",
